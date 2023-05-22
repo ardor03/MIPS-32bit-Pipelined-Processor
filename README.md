@@ -25,6 +25,7 @@ This image is taken from the web to provide a better view of the implementation.
 
 Download or clone the project, write your machine code to run in the `input.txt` file present in the assembler directory. Now, run the `assembler.cpp` file that converts it into the required input format for the processor and writes it in `instructionMemory.v` present in the same directory. Now, copy this file and paste it in processor directory.
 To run the processor you can use any software of your choice with similar instructions. The instructions for iverlog (assuming linux environment or WSL and directory as the processor directory of the folder) are as follows:
+
 ```iverilog -o outputFileName ALU.v instructionDecode.v IDtoExe.v exeToMemReg.v instructionExecution.v  programCounter.v IFtoIDReg.v instructionFetch.v registerFile.v instructionMemory.v controlUnit.v memToWBReg.v writeBack.v dataMemory.v  memory.v finalTestBench.v toplevel.v```
 
 ```vvp outputFileName```
